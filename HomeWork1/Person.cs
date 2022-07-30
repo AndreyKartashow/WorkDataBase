@@ -8,7 +8,7 @@ namespace DataBase
             
             string[] fName = { "Олег", "Владимир", "Петр", "Андрей", "Семен", "Геннадий", "Владислав", "Сергей", "Павел", "Анатолий", "Дмитрий", "Александр"};
             string[] lName = { "Сидоров", "Иванов", "Петров", "Дроздов", "Коршунов", "Зудин", "Семенов", "Власкин", "Казаков", "Дроздов"};
-            string[] mName = { "Александрович", "Дмитриевич", "Геннадиевич", "Олегович", "Андреевич", "Анатольевич", "Владимирович", "Петрович",};
+            string[] mName = { "Александрович", "Дмитриевич", "Геннадиевич", "Олегович", "Андреевич", "Анатольевич", "Владимирович", "Петрович"};
             string[] yearBirth = { "10.12.1995", "15.06.1994", "24.06.1990", "16.07.1996", "07.01.1992", "13.04.1998", "04.03.1995", "28.09.1996"};
             string[] address = { "Лермонтова", "Пушкина", "Колхозная", "Музыкальная", "Ленина", "Центральная", "Большая", "Южная"};
             string[] job = { "Водитель", "Кондуктор", "Диспетчер"};
@@ -23,7 +23,7 @@ namespace DataBase
                 string yearBirthPerson = yearBirth[random.Next(yearBirth.Length)];
                 string addressPerson = address[random.Next(address.Length)];
                 string jobPerson = job[random.Next(job.Length)];
-                text += $"{pasportPerson};{fNamePerson};{lNamePerson};{mNamePerson};{addressPerson};{jobPerson};\n";
+                text += $"{pasportPerson};{fNamePerson};{lNamePerson};{mNamePerson};{yearBirthPerson};{addressPerson};{jobPerson};\n";
             }
 
             File.WriteAllText("person.csv", text);
