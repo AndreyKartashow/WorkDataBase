@@ -19,7 +19,7 @@ namespace DataBase
                 text += $"{idCabinet};{idOccupation};{idStudent};{row};{idTable};{idVariante}\n";
             }
 
-            File.WriteAllText("ScriptOccupation.csv", text);
+            File.WriteAllText("Places.csv", text);
         }
     }
 }
